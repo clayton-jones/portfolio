@@ -30,3 +30,5 @@ Start time: 6:30 pm
 Finish time: 8:00 pm
 
 Actual time needed to complete: 1 hr 30 min
+
+Used https://www.w3schools.com/bootstrap/bootstrap_carousel.asp for image carousel
