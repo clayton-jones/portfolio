@@ -120,4 +120,41 @@
       visibleClass: 'header-visible'
     });
 
+  // Slick - Image Carousel
+  // $('.img-slick').slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 1600,
+  //   // dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   cssEase: 'linear'
+  // })
+
+  // $('.slick-arrow').hide();
+
+  let imgArr = ['images/lightning.jpg', 'images/city.jpg', 'images/rain.jpg'];
+  let imgIndex = 0;
+  setInterval(() => {
+    let background = $('section.one');
+    background.animate({
+      opacity: 1
+    }, 250);
+    background.css('background-image', `url('${imgArr[imgIndex]}')`);
+    setTimeout(() => {
+      background.animate({
+        opacity: 0.95
+      }, 250);
+
+    }, 2750)
+    imgIndex++;
+    if (imgIndex === imgArr.length) {
+      imgIndex = 0;
+    }
+  }, 3000);
+
+
+
 })(jQuery);
