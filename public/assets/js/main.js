@@ -120,4 +120,19 @@
       visibleClass: 'header-visible'
     });
 
+  // Slick - Image Carousel
+  $('.img-slick').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1600,
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  })
+
+  $('.slick-arrow').hide();
+
 })(jQuery);
